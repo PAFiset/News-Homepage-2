@@ -1,6 +1,7 @@
 main{
   
-  .container {  display: grid;
+  .container {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.9fr 0.4fr 225px;
     gap: 40px 40px;
@@ -12,8 +13,45 @@ main{
     padding: 0 90px;
   }
 
+  @media (max-width:$tablet-size) {
+    
+    .container {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 0.5fr 0.5fr 1.5fr 0.5fr 0.5fr 0.5fr; 
+      gap: 40px 0px; 
+      grid-template-areas: 
+        "image_billboard"
+        "header"
+        "read-more"
+        "latest-news"
+        "sub-news1"
+        "sub-news2"
+        "sub-news3";
+      padding: 0 40px; 
+    }
+    .image_billboard { grid-area: image_billboard; }
+    .header { grid-area: header; }
+    .read-more { grid-area: read-more; }
+    .latest-news { grid-area: latest-news; }
+    .sub-news1 { grid-area: sub-news1; }
+    .sub-news2 { grid-area: sub-news2; }
+    .sub-news3 { grid-area: sub-news3; }
+  }
+  
+
   .image_billboard { 
     grid-area: image_billboard; 
+
+    background-image: url(/images/woodbuildblock-desktop.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    @media (max-width:$tablet-size){
+      background-image: url(/images/woodbuildingblock-mobile.jpg);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
     
     img{
       width:100%;
@@ -96,8 +134,6 @@ main{
     }
   }
 
-
-
   .sub-news1 { 
     grid-area: sub-news1; 
     display: flex;
@@ -105,7 +141,6 @@ main{
     img{
       max-width: 175px;
     }
-    
   }
 
   .sub-news2 { 
@@ -115,7 +150,6 @@ main{
     img{
       max-width: 175px;
     }
-
   }
 
   .sub-news3 { 
@@ -126,7 +160,6 @@ main{
       max-width: 175px;
     }
   }
-
 
   .sub-news-text{
     display: flex;
@@ -154,5 +187,4 @@ main{
       font-size: 20px;
     }
   }
-
 }

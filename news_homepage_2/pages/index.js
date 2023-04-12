@@ -12,7 +12,7 @@ export default function Home() {
 
         <div className="container">
           <div className="image_billboard">
-            <img src="./images/woodbuildblock-desktop.jpg" alt="colored wooden building block" />
+            
           </div>
           <div className="latest-news">
               <h1>New</h1>
