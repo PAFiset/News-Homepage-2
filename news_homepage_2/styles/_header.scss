@@ -1,12 +1,9 @@
 header{
-  
   .navbar{
     height: 100px;
     display: flex;
     align-items: center;
     padding: 40px 90px;
-
-    
 
     @media (max-width:$tablet-size){
       padding: 40px 40px;
@@ -30,7 +27,21 @@ header{
       z-index: 2;
 
       @media (max-width: $tablet-size) {
-        
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to left, #fefdf9 70%, rgba(0, 0, 0, 0.5) 30%);
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        a{
+          transform: translate(34vw, -14vw);
+          color: #00001a;
+          font-size: 28px;
+        }
 
         &.navbarmobileclosed{
           display: none;
@@ -86,5 +97,28 @@ header{
     @media (max-width: $tablet-size) {
         display: inline;
     }  
+  }
+
+  .navicon_open{
+    span:nth-child(1) {
+      top: 16px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+      
+    span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+      
+    span:nth-child(3) {
+      top: 16px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
   }
 }
