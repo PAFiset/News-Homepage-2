@@ -12,18 +12,19 @@ export default function Home() {
 
         <div className="container">
           <div className="image_billboard">
-            
+            <img className="desktop" src="./images/woodbuildingblock-desktop.jpg" alt="colored wood building block"/>
+            <img className="mobile" src="./images/woodbuildingblock-mobile.jpg" alt="colored wood building block"/>
           </div>
           <div className="latest-news">
-              <h1>New</h1>
-              <h2>Hydrogen vs electric car</h2>
-              <p>will hydrogens-fueled cars ever catch up to EVs?</p>
-              <hr/>
-              <h2>The Downsizes of AI Artistry</h2>
-              <p>what are the possible adverse effects of on-demand AI image generation?</p>
-              <hr/>
-              <h2>Is VC Funding Drying Up?</h2>
-              <p>private funding by VC firms id down 50% YOY. We take a look at what that means</p>
+            <h1>New</h1>
+            <h2>Hydrogen vs electric car</h2>
+            <p>will hydrogens-fueled cars ever catch up to EVs?</p>
+            <hr/>
+            <h2>The Downsizes of AI Artistry</h2>
+            <p>what are the possible adverse effects of on-demand AI image generation?</p>
+            <hr/>
+            <h2>Is VC Funding Drying Up?</h2>
+            <p>private funding by VC firms id down 50% YOY. We take a look at what that means</p>
           </div>
           <div className="header">
             <h1>
@@ -40,7 +41,7 @@ export default function Home() {
               READ MORE
             </button>
           </div>
-          <div className="sub-news1">
+          <div className="sub-news1 sub-new-area">
             <div>
               <img src="./images/retro-pcs.jpg" alt="retro pcs"/>
             </div>
@@ -56,7 +57,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="sub-news2">
+          <div className="sub-news2 sub-new-area">
             <div>
               <img src="./images/top-laptops.jpg" alt="top laptops"/>
             </div>
@@ -72,7 +73,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="sub-news3">
+          <div className="sub-news3 sub-new-area">
             <div>
               <img src="./images/gaming-growth.jpg" alt="hand and gaming controller"/>
             </div>
