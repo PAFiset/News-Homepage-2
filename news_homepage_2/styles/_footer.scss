@@ -1,55 +1,43 @@
-footer{
+footer {
   position: relative;
 
-  .footer-navbar{
+  .footer-navbar {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom:180px;
-    left: 90px;
+    padding: 0 90px;
 
-    @media(min-width:$tablet-size) and (max-width:1200px){
-      bottom:220px;
-      left: 90px;
+    @media (max-width: $tablet-size) {
+      padding: 0 40px;
     }
 
-    @media(max-width:$tablet-size){
-      bottom:320px;
-      left: 40px;
-    }
-
-    @media(max-width:420px){
-      bottom:520px;
-      left: 40px;
-    }
-
-    a{
-      font-family: sans-serif;
-      text-decoration: none;
-      color: #00001a;
+    div {
       padding: 10px 0;
     }
 
-    a:hover{
+    a {
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #00001a;
+      transition: color 250ms;
+    }
+
+    a:hover {
       color: #dfa960;
     }
   }
 
-  
-
-  .footer-message{
+  .footer-message {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 500px;
     padding: 0 90px;
 
-    @media (max-width:$tablet-size){
-      padding:0 40px;
+    @media (max-width: $tablet-size) {
+      padding: 0 40px;
     }
 
-    h1{
+    h1 {
       color: red;
       padding: 25px 0;
     }
