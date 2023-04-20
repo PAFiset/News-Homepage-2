@@ -89,13 +89,7 @@ header {
       border-radius: 9px;
       opacity: 1;
       left: 5px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
       transform: rotate(0deg);
-      -webkit-transition: 0.25s ease-in-out;
-      -moz-transition: 0.25s ease-in-out;
-      -o-transition: 0.25s ease-in-out;
       transition: 0.25s ease-in-out;
     }
 
@@ -107,9 +101,6 @@ header {
   .navicon_open {
     span:nth-child(1) {
       top: 16px;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: rotate(135deg);
-      -o-transform: rotate(135deg);
       transform: rotate(135deg);
     }
 
@@ -120,9 +111,6 @@ header {
 
     span:nth-child(3) {
       top: 16px;
-      -webkit-transform: rotate(-135deg);
-      -moz-transform: rotate(-135deg);
-      -o-transform: rotate(-135deg);
       transform: rotate(-135deg);
     }
   }
